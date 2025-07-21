@@ -9,3 +9,652 @@
   background: #fff;         /* Fondo blanco */
   overflow: visible;        /* Permite que elementos hijos sobresalgan */
 }
+
+/* Contenedor scroll horizontal para móviles */
+.galeria-scroll {
+  overflow-x: auto;                 /* Scroll horizontal activado */
+  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  position: relative;               /* Para controlar z-index de hijos */
+}
+
+/* Contenedor flexible responsive de items */
+.galeria-responsive {
+  display: flex;           /* Contenedor flex para ordenar items */
+  gap: 30px;               /* Espacio entre items */
+  padding: 20px 10px;      /* Relleno interno */
+  position: relative;      /* Para hijos con z-index */
+  flex-wrap: wrap;         /* Por defecto permite que los items se envuelvan */
+  justify-content: flex-start; /* Items alineados al inicio */
+}
+
+/* ================= ITEMS DE LA GALERÍA ================= */
+
+/* Item individual dentro de la galería */
+.item-galeria {
+  width: 200px;              /* Ancho fijo */
+  height: 250px;             /* Alto fijo */
+  background: #fff;          /* Fondo blanco */
+  border-radius: 8px;        /* Bordes redondeados */
+  box-shadow: 0 5px 10px rgba(0,0,5); /* Sombra ligera */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves */
+  z-index: 1;                /* Índice para apilamiento */
+  position: relative;        /* Posicionamiento relativo */
+  display: flex;             /* Flex para alinear contenido si se añade */
+  flex-direction: column;    /* Elementos en columna */
+  align-items: center;       /* Centrar horizontal */
+  text-align: center;        /* Texto centrado */
+}
+
+/* Hover sobre item: escala y sombra más fuerte */
+.item-galeria:hover {
+  transform: scale(1.05);    /* Escala al 105% */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.9); /* Sombra más visible */
+  z-index: 9999;             /* Traer al frente */
+}
+
+/* Imagen dentro del item */
+.item-galeria img {
+  width: 100%;               /* Imagen ocupa todo el ancho */
+  height: auto;              /* Mantiene proporción */
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo arriba */
+  transition: opacity 0.3s ease; /* Transición para opacidad */
+  transform: scale(1);       /* Sin transformación inicial */
+  transform-origin: center center; /* Punto de transformación */
+}
+
+/* Enlace dentro del item */
+.item-galeria a {
+  display: block;            /* Que ocupe todo el espacio */
+  text-decoration: none;     /* Sin subrayado */
+}
+
+/* Leyenda debajo del item Movil*/
+.leyenda {
+  text-align: center;        /* Texto centrado */
+  padding: 4px 10px 10px 10px; /* Relleno para espacio interno */
+  font-size: 16px;           /* Tamaño de letra */
+  font-weight: bold;         /* Texto en negrita */
+  color: #333;               /* Color texto gris oscuro */
+  transition: color 0.3s ease; /* Transición para cambio color */
+}
+
+/* Cambia color leyenda al hacer hover en el item */
+.item-galeria:hover .leyenda {
+  color: #0073aa;            /* Azul destacado */
+}
+
+/* ===== FLECHAS DE NAVEGACIÓN ===== */
+
+/* Estilo general para flechas */
+.flecha {
+  cursor: pointer;                       /* Cursor pointer */
+  font-size: 26px;                      /* Tamaño del icono */
+  position: absolute;                   /* Posición absoluta */
+  top: 46%;                            /* Centrado vertical */
+  transform: translateY(-50%);          /* Ajuste para centrar */
+  color: #333;                         /* Color texto */
+  background: rgba(255,255,255,0.8);  /* Fondo blanco semi-transparente */
+  border-radius: 50%;                  /* Forma circular */
+  padding: 8px 12px;                   /* Relleno interno */
+  z-index: 10;                        /* Índice para estar encima */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+  transition: background 0.3s ease;    /* Transición de fondo */
+  user-select: none;                   /* Evita selección de texto */
+  display: none;                      /* Oculto por defecto */
+}
+
+/* Hover en flecha */
+.flecha:hover {
+  background: rgba(0, 115, 170, 0.8); /* Fondo azul oscuro */
+  color: #fff;                        /* Texto blanco */
+}
+
+/* Flecha izquierda */
+.flecha-izquierda {
+  left: 5px;                        /* Alineada a la izquierda */
+}
+
+/* Flecha derecha */
+.flecha-derecha {
+  right: 5px;                      /* Alineada a la derecha */
+}
+
+/* ==== GALERÍA RESPONSIVE MÓVIL (max-width: 768px) ==== */
+@media (max-width: 768px) {
+
+  /* Cambia galería a carrusel horizontal */
+  .galeria-responsive {
+    flex-wrap: nowrap;            /* Sin salto de línea */
+    overflow-x: auto;             /* Scroll horizontal */
+    scroll-snap-type: x mandatory; /* Ajuste de scroll snap */
+    -webkit-overflow-scrolling: touch; /* Scroll suave iOS */
+  }
+
+  /* Items adaptados para carrusel */
+  .item-galeria {
+    flex: 0 0 auto;               /* No crecer ni encoger */
+    min-width: 10vw;              /* Mínimo ancho relativo */
+    scroll-snap-align: start;     /* Snap al inicio */
+    margin-right: 0px;            /* Sin margen derecha */
+    position: relative;
+    z-index: 1;
+    height: 260px;                /* Ajuste altura */
+		
+  }
+
+  /* Mostrar flechas */
+  .flecha {
+    display: block;
+  }
+
+  /* Reducir efecto hover para móviles */
+  .item-galeria:hover {
+    transform: scale(1.05);       /* Escala ligera */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.9); /* Sombra menos intensa */
+    z-index: 1;
+  }
+
+  /* Ajuste del wrapper para móviles */
+  .galeria-wrapper {
+    width: 80vw;                  /* Ancho casi completo viewport */
+    padding: 5px 2px;            /* Padding lateral reducido */
+    overflow-x: visible;          /* Permite overflow visible */
+  }
+}
+
+/* ==== GALERÍA TAMAÑOS MEDIOS Y ESCRITORIO ==== */
+
+/* Tablets y desktops */
+@media (min-width: 769px) {
+
+  /* Leyenda galería base */
+  .galeria-responsive .leyenda {
+    font-size: 17px; /* Tamaño de texto */
+    color: #000;     /* Color negro */
+    font-weight: bold; /* Negrita */
+  }
+
+  /* Galería con scroll horizontal oculto */
+  .galeria-scroll {
+    overflow-x: hidden;
+  }
+
+  /* Galería responsiva tipo grid centrado */
+  .galeria-responsive {
+    flex-wrap: wrap;           /* Envuelve items */
+    justify-content: center;   /* Centra los items */
+  }
+
+  /* Items flexibles con ancho proporcional */
+  .item-galeria {
+    flex: 0 0 calc(50% - 20px);    /* Dos columnas con espacio */
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* Escritorio grande (>1024px) */
+@media (min-width: 1025px) {
+  .item-galeria {
+    flex: 0 0 calc(33.333% - 20px); /* Tres columnas */
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+/* Tablets entre 769px y 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .galeria-wrapper {
+    position: relative;
+    padding: 10px 0px;
+    background: #fff;
+    overflow: visible;
+  }
+
+  .item-galeria {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 auto;
+    width: 180px;   /* Tamaño horizontal menor */
+    height: 240px;  /* Altura consistente */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+	.galeria-responsive .leyenda {
+    font-size: 17px; /* Tamaño de texto */
+    color: #000;     /* Color negro */
+    font-weight: bold; /* Negrita */
+  }
+}
+
+/* ==== GALERÍA ESTÁTICA (grilla fija) ==== */
+
+/* Contenedor grilla estática */
+.galeria-estatica {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px;                             /* Espacio entre items */
+  background: #ffffff;                   /* Fondo blanco */
+  margin-bottom: 30px;
+}
+
+/* Item estático dentro de grilla */
+.item-estatico {
+  background: #fff;                     /* Fondo blanco */
+  border-radius: 8px;                   /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,5); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+  overflow: hidden;                    /* Oculta overflow */
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+	
+}
+
+.item-estatico a,
+.item-estatico a p,
+.item-estatico a strong {
+  text-decoration: none;
+}
+
+/* Hover item estático: escala y sombra */
+.item-estatico:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.9);
+  z-index: 999;
+}
+
+/* Imagen dentro del item estático */
+.item-estatico img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: opacity 0.3s ease;
+}
+
+/* Leyenda dentro item estático */
+.galeria-estatica .leyenda {
+  text-align: center;
+  padding: 4px 10px 10px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Cambia color leyenda en hover */
+.item-estatico:hover .leyenda {
+  color: #0073aa;
+}
+
+/* Responsive: 2 columnas en tablets */
+@media (max-width: 1024px) {
+  .galeria-estatica {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-estatico {
+    transform: none !important; /* Sin escala hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,5);
+    z-index: 1;
+  }
+}
+
+/* Responsive: 1 columna en móviles pequeños */
+@media (max-width: 768px) {
+  .galeria-estatica {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .item-estatico {
+    transform: none !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,5);
+    z-index: 1;
+    width: 80%;          /* Ancho reducido para centrar */
+    margin: 0 auto;      /* Centrar item */
+  }
+}
+
+/* ===== TABLAS PARA ESCRITORIO Y MOVIL ===== */
+
+/* Mostrar solo en escritorio */
+.solo-escritorio {
+  display: block;
+}
+
+/* Ocultar en escritorio */
+.solo-movil {
+  display: none;
+}
+
+/* Mostrar solo en móvil */
+@media (max-width: 768px) {
+  .solo-escritorio {
+    display: none;
+  }
+  .solo-movil {
+    display: block;
+  }
+}
+
+/* Estilo tablas en escritorio */
+.solo-escritorio table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Cabecera de tabla */
+.solo-escritorio thead {
+  background-color: #2c3e50;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Celdas de tabla */
+.solo-escritorio th,
+.solo-escritorio td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Texto destacado en tabla */
+.solo-escritorio td strong {
+  color: #0a58ca;
+}
+
+/* ==== NAVEGACIÓN ==== */
+
+.inside-navigation {
+  position: relative;    /* Contenedor para elementos posicionados */
+}
+
+.menu-toggle {
+  position: relative;
+  left: -120px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+/* ==== TIPOGRAFÍA GENERAL ==== */
+
+html {
+  font-size: 16px; /* Base igual a 1rem */
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5rem; /* 40px en escritorio */
+}
+
+h2 {
+  font-size: 2rem;   /* 32px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+/* Párrafos */
+p {
+  font-size: 1.05rem; /* 16.8px */
+}
+
+/* Responsive para tipografía en móviles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* Más pequeño en móvil */
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p, li {
+    font-size: 0.95rem; /* 15.2px */
+    line-height: 1.5;   /* Mejor lectura */
+  }
+}
+
+/* Colores base texto y títulos */
+@media (min-width: 769px) {
+  h1, h2, h3 {
+    color: #222222; /* Títulos oscuro */
+  }
+  p {
+    color: #333333; /* Texto suave */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  h1, h2, h3 {
+    color: #000000; /* Negro para móvil */
+  }
+  p {
+    color: #000000;
+  }
+}
+
+/* Color títulos en widgets barra lateral */
+.widget_block .wp-block-heading {
+  color: #ffffff;
+}
+
+/* ===== PREGUNTAS FRECUENTES ===== */
+
+.preguntas-frecuentes {
+  background: #f7f7f7;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  color: #0073aa;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #444;
+}
+
+.faq-acordeon {
+  width: 53vw;
+  margin: 0 ;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.faq-pregunta {
+  background: #f1f1f1;
+  padding: 14px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+.faq-pregunta::after {
+  content: '+';
+  font-size: 16px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+.faq-item.activo .faq-pregunta::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+.faq-respuesta {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 16px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.faq-item.activo .faq-respuesta {
+  max-height: 500px;
+  padding: 12px 16px;
+}
+@media (max-width: 768px) {
+  .faq-pregunta {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+  .faq-respuesta {
+    font-size: 12px;
+    padding: 0 14px;
+  }
+  .faq-item.activo .faq-respuesta {
+    padding: 10px 14px;
+  }
+  .faq-acordeon {
+  width: 82vw;
+  margin: 0 ;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+.faq-acordeon {
+  width: 51vw;
+  margin: 0 ;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+}
+/* ===== CONTENIDO PRINCIPAL AJUSTES RESPONSIVE ===== */
+
+/* Móviles verticales */
+@media (max-width: 768px) {
+  .single-post .site-main,
+  .page .site-main {
+    padding: 0px 0px;
+    margin: 0 10px;
+    background: #ffffff;
+    box-shadow: none;
+    max-width: 100%;
+  }
+}
+
+/* Tablets y móviles horizontales (intermedios) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .single-post .site-main,
+  .page .site-main,
+  .category .site-main {
+    max-width: 90%;
+    margin: 30px 0 30px 30px !important;
+    background: #ffffff;
+    padding: 0px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.9);
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1025px) {
+  .single-post .site-main,
+  .page .site-main,
+  .category .site-main {
+    max-width: 850px;
+    margin: 30px 0 30px 35px !important;
+    background: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
+    box-sizing: border-box;
+  }
+}
+
+/* ===== OCULTAR BARRA SCROLL EN GALERÍA ===== */
+
+/* Para navegadores Webkit */
+.galeria-responsive::-webkit-scrollbar {
+  display: none;
+}
+
+/* Para IE y Firefox */
+.galeria-responsive {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.galeria-trapillo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.galeria-trapillo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.galeria-trapillo img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .galeria-trapillo {
+    justify-content: space-evenly;
+  }
+  .galeria-trapillo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .galeria-trapillo {
+    justify-content: center;
+    gap: 10px;
+  }
+  .galeria-trapillo img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .galeria-trapillo {
+    gap: 20px;
+  }
+}
+
