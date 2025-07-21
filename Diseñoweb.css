@@ -1,0 +1,11 @@
+/* ===== GALERÍA GENERAL ===== */
+
+/* Contenedor principal de la galería */
+.galeria-wrapper {
+  position: relative;       /* Posiciona relativo para elementos hijos posicionados */
+  width: 100%;              /* Ancho total del contenedor */
+  margin-bottom: 30px;      /* Margen inferior para separación */
+  padding: 10px 35px;       /* Relleno interno (nuevo agregado) */
+  background: #fff;         /* Fondo blanco */
+  overflow: visible;        /* Permite que elementos hijos sobresalgan */
+}
