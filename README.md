@@ -39,6 +39,7 @@ Mejor desempeño:
 🇸🇻 El Salvador: CTR muy alto de 18,2 %
 
 Aspectos positivos:
+
 ✅ Excelente posicionamiento en Venezuela: El sitio aparece en promedio en la posición 7,4, es decir, en la primera página de resultados. Además, el CTR es de 6,3%, por encima del promedio general.
 
 ✅ Presencia internacional: La página esta recibiendo impresiones desde más de 10 países, lo cual es un gran indicio de alcance global.
