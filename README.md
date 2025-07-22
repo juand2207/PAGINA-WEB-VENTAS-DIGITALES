@@ -64,3 +64,7 @@ Aspectos positivos:
 La página web ya está posicionada, genera visibilidad en múltiples países y está recibiendo clics reales de usuarios. Lo más positivo es que esta muy cerca del top 10 en Venezuela, lo cual da una base sólida para escalar más arriba mejorando la estrategia SEO y generando mas contenido atractivio con palabras claves.
 
 
+![Image](https://github.com/user-attachments/assets/e286634a-31fa-4c96-bcd4-39b12a0a2f23)
+
+![Image](https://github.com/user-attachments/assets/64f00370-2fb1-49ed-85f1-c762258a4efa)
+
