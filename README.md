@@ -42,4 +42,16 @@ Aspectos positivos:
 
 ![Imagen](https://github.com/user-attachments/assets/db6f87a1-8021-4b96-9808-ec297d1c4e6c)
 
+📈 Imagen 3 – Gráfico de clics por día
+Observaciones clave:
+
+Se tuvo un pico de hasta 6 clics en un solo día.
+
+Aunque hay días sin actividad, la tendencia muestra picos recurrentes.
+
+Aspectos positivos:
+✅ Ya está generando tráfico orgánico constante: Aunque es bajo, el patrón de picos muestra que Google indexa tu contenido y lo muestra regularmente.
+
+✅ Optimización futura posible: Estos datos sirven de base para identificar qué días o contenidos generan más interés y así duplicar esfuerzos en esa dirección.
+
 ![Image](https://github.com/user-attachments/assets/aa174e27-e6e0-4df0-a0d5-c34af1a4846e)
