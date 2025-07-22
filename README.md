@@ -22,4 +22,22 @@ Aspectos positivos:
 
 ![Imagen](https://github.com/user-attachments/assets/94dc2d0e-f422-4489-aae3-a6277822cf52)
 
+🌍 Imagen 2 – Desempeño por país
+Mejor desempeño:
+
+🇻🇪 Venezuela: 11 clics, CTR 6,3 %, posición 7,4
+
+🇨🇴 Colombia: 4 clics, CTR 7,8 %, posición 22,7
+
+🇪🇸 España: 3 clics, CTR 2,7 %, posición 21,6
+
+🇸🇻 El Salvador: CTR muy alto de 18,2 %
+
+Aspectos positivos:
+✅ Excelente posicionamiento en Venezuela: El sitio aparece en promedio en la posición 7,4, es decir, en la primera página de resultados. Además, el CTR es de 6,3%, por encima del promedio general.
+
+✅ Presencia internacional: La página esta recibiendo impresiones desde más de 10 países, lo cual es un gran indicio de alcance global.
+
+✅ CTR sobresaliente en El Salvador y Argentina: Aunque con pocas impresiones, el CTR supera el 7% y hasta el 18%, lo que indica que el contenido es atractivo para quienes lo ven.
+
 ![Imagen](https://github.com/user-attachments/assets/db6f87a1-8021-4b96-9808-ec297d1c4e6c)
