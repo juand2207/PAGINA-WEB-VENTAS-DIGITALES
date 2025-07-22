@@ -1,6 +1,6 @@
-Página web desarrollada utilizando el CMS WordPress y diseñada visualmente para la experiencia del usuario con una interfaz muy amigable y fácil de usar. Fue desarrollada para la venta de productos digitales a nivel global, cada entrada está redactada con experiencias y opiniones de cada producto aplicando técnicas de SEO para mejorar la visibilidad en los motores de busqueda.
+Página web desarrollada con el CMS WordPress, diseñada con un enfoque centrado en la experiencia del usuario (UX) y una interfaz intuitiva y fácil de navegar. Creada para la comercialización de productos digitales a nivel global, cada entrada está redactada con experiencias y opiniones detalladas, aplicando técnicas de SEO para optimizar su visibilidad en los motores de búsqueda.
 
-Codigos realizados para la experiencia usuario e interfaz de usuario (UX/UI), utilizando el plugin Simple Custom CSS and JS en el CSM WordPress, para tener mejor organización y optimización.
+Códigos desarrollados para mejorar la experiencia e interfaz de usuario (UX/UI), implementados mediante el plugin Simple Custom CSS and JS en el CMS WordPress, con el objetivo de lograr una mejor organización y optimización del sitio.
 
 Página Web desarrollada: https://opinionesformaciondigital.com
 
