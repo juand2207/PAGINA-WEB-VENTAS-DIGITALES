@@ -1,4 +1,4 @@
-Codigos realizados para la experiencia usuario e interfaz de usuario (UX/UI), utilizando el plugin Simple Custom CSS and JS para tener mejor organización y optimización.
+Codigos realizados para la experiencia usuario e interfaz de usuario (UX/UI), utilizando el plugin Simple Custom CSS and JS en el CSM WordPress, para tener mejor organización y optimización.
 
 ANÁLISIS DE RENDIMIENTO UTILIZANDO GOOGLE SEARCH CONSOLE
 
