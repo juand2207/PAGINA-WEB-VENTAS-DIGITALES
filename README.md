@@ -27,6 +27,7 @@ Aspectos positivos:
 ![Imagen](https://github.com/user-attachments/assets/94dc2d0e-f422-4489-aae3-a6277822cf52)
 
 🌍 Imagen 2 – Desempeño por país
+
 Mejor desempeño:
 
 🇻🇪 Venezuela: 11 clics, CTR 6,3 %, posición 7,4
