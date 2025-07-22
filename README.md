@@ -57,7 +57,7 @@ Aunque hay días sin actividad, la tendencia muestra picos recurrentes.
 
 Aspectos positivos:
 
-✅ Ya está generando tráfico orgánico constante: Aunque es bajo, el patrón de picos muestra que Google indexa tu contenido y lo muestra regularmente.
+✅ Ya está generando tráfico orgánico constante: Aunque es bajo, el patrón de picos muestra que Google indexa el contenido y lo muestra regularmente.
 
 ✅ Optimización futura posible: Estos datos sirven de base para identificar qué días o contenidos generan más interés y así duplicar esfuerzos en esa dirección.
 
