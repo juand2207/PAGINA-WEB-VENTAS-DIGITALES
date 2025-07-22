@@ -41,3 +41,5 @@ Aspectos positivos:
 ✅ CTR sobresaliente en El Salvador y Argentina: Aunque con pocas impresiones, el CTR supera el 7% y hasta el 18%, lo que indica que el contenido es atractivo para quienes lo ven.
 
 ![Imagen](https://github.com/user-attachments/assets/db6f87a1-8021-4b96-9808-ec297d1c4e6c)
+
+![Image](https://github.com/user-attachments/assets/aa174e27-e6e0-4df0-a0d5-c34af1a4846e)
