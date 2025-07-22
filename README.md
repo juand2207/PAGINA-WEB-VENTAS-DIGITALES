@@ -1,5 +1,7 @@
 Codigos realizados para la experiencia usuario e interfaz de usuario (UX/UI), utilizando el plugin Simple Custom CSS and JS para tener mejor organización y optimización.
 
+ANÁLISIS DE RENDIMIENTO UTILIZANDO GOOGLE SEARCH CONSOLE
+
 📊 Imagen 1 – Rendimiento general (últimos 3 meses)
 Resumen de métricas:
 
