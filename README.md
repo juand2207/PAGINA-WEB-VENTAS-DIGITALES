@@ -19,4 +19,5 @@ Aspectos positivos:
 ✅ CTR (2,7%): Este porcentaje indica que de cada 100 veces que la página parece, 3 personas han dado clic. Esto puede mejorar.
 
 ✅ Posición promedio aceptable (18,8): Está cerca de la segunda página de resultados. Esto quiere decidir que con un poco más de optimización SEO, se podria alcanzar la primera página en variables brusquedas clave.
+
 ![Imagen](https://github.com/user-attachments/assets/94dc2d0e-f422-4489-aae3-a6277822cf52)
