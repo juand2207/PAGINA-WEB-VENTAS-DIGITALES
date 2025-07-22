@@ -1,4 +1,4 @@
-Página web desarrollada en el CMS WordPress y diseñada visualmente para la experiencia del usuario con una interfaz muy amigable y fácil de usar. Fue desarrollada para la venta de productos digitales a nivel global, cada página está redactada con experiencias y opiniones de cada producto y optimizado con técnicas SEO.
+Página web desarrollada, en el CMS WordPress y diseñada visualmente para la experiencia del usuario con una interfaz muy amigable y fácil de usar. Fue desarrollada para la venta de productos digitales a nivel global, cada página está redactada con experiencias y opiniones de cada producto y optimizado con técnicas SEO.
 
 Codigos realizados para la experiencia usuario e interfaz de usuario (UX/UI), utilizando el plugin Simple Custom CSS and JS en el CSM WordPress, para tener mejor organización y optimización.
 
