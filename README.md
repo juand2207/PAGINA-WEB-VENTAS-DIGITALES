@@ -1,4 +1,4 @@
-Página web desarrollada con el CMS WordPress, diseñada con un enfoque centrado en la experiencia del usuario (UX) y una interfaz intuitiva y fácil de navegar. Creada para la comercialización de productos digitales a nivel global, cada entrada está redactada con experiencias y opiniones detalladas, aplicando técnicas de SEO para optimizar su visibilidad en los motores de búsqueda.
+Página web desarrollada con el CMS WordPress, diseñada con un enfoque centrado en la experiencia del usuario (UX) y una interfaz intuitiva (UI) y fácil de navegar. Creada para la comercialización de productos digitales a nivel global, cada entrada está redactada con experiencias y opiniones detalladas, aplicando técnicas de SEO para optimizar su visibilidad en los motores de búsqueda.
 
 Códigos desarrollados para mejorar la experiencia e interfaz de usuario (UX/UI), implementados mediante el plugin Simple Custom CSS and JS en el CMS WordPress, con el objetivo de lograr una mejor organización y optimización del sitio.
 
