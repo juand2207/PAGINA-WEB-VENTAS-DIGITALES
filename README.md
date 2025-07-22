@@ -21,3 +21,5 @@ Aspectos positivos:
 ✅ Posición promedio aceptable (18,8): Está cerca de la segunda página de resultados. Esto quiere decidir que con un poco más de optimización SEO, se podria alcanzar la primera página en variables brusquedas clave.
 
 ![Imagen](https://github.com/user-attachments/assets/94dc2d0e-f422-4489-aae3-a6277822cf52)
+
+![Imagen](https://github.com/user-attachments/assets/db6f87a1-8021-4b96-9808-ec297d1c4e6c)
