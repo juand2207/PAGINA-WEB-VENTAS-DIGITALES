@@ -63,8 +63,34 @@ Aspectos positivos:
 📌 Conclusión general:
 La página web ya está posicionada, genera visibilidad en múltiples países y está recibiendo clics reales de usuarios. Lo más positivo es que esta muy cerca del top 10 en Venezuela, lo cual da una base sólida para escalar más arriba mejorando la estrategia SEO y generando mas contenido atractivio con palabras claves.
 
+Valores obtenidos en PageSpeed Insights (https://pagespeed.web.dev) son muy altos y reflejan un sitio web muy bien optimizado.
+
 
 ![Image](https://github.com/user-attachments/assets/e286634a-31fa-4c96-bcd4-39b12a0a2f23)
 
+✅ Rendimiento: 98
+Este puntaje evalúa la velocidad de carga y la experiencia del usuario. Un 98 es prácticamente perfecto.
+
+🔹 El sitio carga rápido, responde bien y no tiene bloqueos importantes.
+🔹 Ventaja: Mejorar el posicionamiento SEO y reduce el abandono por lentitud.
+
+
 ![Image](https://github.com/user-attachments/assets/64f00370-2fb1-49ed-85f1-c762258a4efa)
 
+✅ Accesibilidad: 100
+Este valor evalúa qué tan fácil es para cualquier persona, incluyendo personas con discapacidades, navegar en el sitio.
+
+🔹 Significa que se estan usando etiquetas correctamente, colores adecuados, buen contraste, y ayudas visuales.
+🔹 Ventaja: Cumplir con estándares de inclusión y accesibilidad, lo que mejora la usabilidad y la confianza del usuario.
+
+✅ Prácticas recomendadas: 96
+Evalúa si el sitio sigue buenas prácticas técnicas (como el uso correcto de HTTPS, recursos seguros, evitar librerías obsoletas, etc.).
+
+🔹 Significa que el código está limpio, moderno y seguro.
+🔹 Ventaja: Brindar una experiencia estable y segura para los visitantes.
+
+✅ SEO: 100
+El sitio está técnicamente optimizado para ser indexado correctamente por los buscadores.
+
+🔹 Se tiene buen uso de etiquetas meta, estructura HTML, enlaces rastreables, títulos correctos y más.
+🔹 Ventaja: Aumentar las posibilidades de aparecer en los primeros resultados de Google.
